@@ -12,11 +12,11 @@
     "react-router-redux": "^4.0.8",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0",
-    "seamless-immutable": "^7.1.4"
+    "seamless-immutable": "^7.1.4",
+    "react-scripts": "1.1.5"
   },
   "devDependencies": {
-    "less-watch-compiler": "^1.11.3",
-    "react-scripts": "1.1.5"
+    "less-watch-compiler": "^1.11.3"
   },
   "scripts": {
     "start": "react-scripts start",
