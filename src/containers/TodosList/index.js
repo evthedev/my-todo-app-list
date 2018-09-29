@@ -116,8 +116,8 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => {
     return {
         actions: {
-        loadTodos: (resourceId, resourceType) => dispatch(loadTodos(resourceId, resourceType)),
-        updateTodoItem: (updatedTodoItem) => dispatch(updateTodoItem(updatedTodoItem))
+            loadTodos: (resourceId, resourceType) => dispatch(loadTodos(resourceId, resourceType)),
+            updateTodoItem: (updatedTodoItem) => dispatch(updateTodoItem(updatedTodoItem))
         }
     }
 }
