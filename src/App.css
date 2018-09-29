@@ -1,28 +1,90 @@
-.App {
+.body {
+  font-size: 20px;
+}
+.ant-card-cover-heading {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.ant-card-cover,
+.ant-card-body {
+  padding: 15px;
+}
+.ant-list {
+  font-size: 16px;
+  font-weight: 300;
+}
+.anticon {
+  font-size: 21px;
+}
+.anticon:hover {
+  cursor: pointer;
+}
+a {
+  color: #333;
+}
+.todos__container {
+  width: calc(100% - 30px);
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 10px;
+  max-width: 400px;
+}
+.todos__logo {
+  max-width: 100px;
+}
+.todos__heading {
+  font-size: 33px;
+}
+.todos__settings {
+  margin-bottom: 20px;
+}
+.todos__settings--editing,
+.todos__settings--not-editing {
+  display: flex;
+  align-items: center;
+}
+.todos__settings--editing .ant-input-group-wrapper,
+.todos__settings--not-editing .ant-input-group-wrapper {
+  margin-right: 10px;
+}
+.todos__settings--not-editing {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.65);
   text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.todos__item {
+  color: #333;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.todos__item--done {
+  background-color: #f7f7f7;
+  color: #b4b2b2;
+  text-decoration: line-through;
 }
-
-.App-title {
-  font-size: 1.5em;
+.todos__item--done a {
+  color: #999;
 }
-
-.App-intro {
-  font-size: large;
+.todos__item .ant-checkbox-wrapper {
+  margin-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.todos__empty {
+  padding: 80px;
+}
+.todos__empty .anticon {
+  margin-right: 10px;
 }

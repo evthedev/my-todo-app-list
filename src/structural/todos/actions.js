@@ -1,5 +1,10 @@
-export const loadTodos = (resource) => ({
+export const loadTodos = (resourceId, resourceType) => ({
     type: 'LOAD_TODOS',
-    resourceId: resource.resourceId,
-    resourceType: resource.resourceType
+    resourceId: resourceId,
+    resourceType: resourceType
+})
+
+export const updateTodoItem = (updatedTodoItem) => ({
+    type: 'UPDATE_TODO_ITEM',
+    updatedTodoItem
 })
