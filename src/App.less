@@ -1,0 +1,112 @@
+
+.body {
+    font-size: 20px;
+}
+
+.ant-card-cover-heading {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ant-card-cover, .ant-card-body {
+    padding: 15px;
+}
+
+.ant-list {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.anticon {
+    font-size: 21px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a {
+    color: #333;
+}
+
+.todos {
+
+    &__container {
+        width: calc(100% - 30px);
+        margin-top: 15px;
+        margin-left: 15px;
+        padding: 10px;
+        max-width: 400px;
+
+    }
+    
+    &__logo {
+        max-width: 100px;
+        // vertical-align: text-bottom;
+    }
+
+    &__heading {
+        font-size: 33px;
+    }
+
+    &__settings {
+        margin-bottom: 20px;
+    
+        &--editing, &--not-editing {
+            display: flex;
+            align-items: center;
+            
+            .ant-input-group-wrapper {
+                margin-right: 10px;
+            }
+        }
+
+        &--not-editing {
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1;
+            color: rgba(0, 0, 0, 0.65);
+            text-align: center;
+            background-color: #fafafa;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            position: relative;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
+    }
+
+    &__item {
+        color: #333;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &--done {
+            background-color: #f7f7f7;
+            color: #b4b2b2;    
+            text-decoration: line-through;
+
+            a {
+                color: #999;
+            }
+        }
+        
+        .ant-checkbox-wrapper {
+            margin-right: 10px;
+        }
+        
+    }
+
+    &__empty {
+        padding: 80px;
+        .anticon {
+            margin-right: 10px
+        }
+    }
+}

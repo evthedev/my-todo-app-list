@@ -4,8 +4,8 @@ const reducer = (state = {}, action) => {
             return { ...state, loading: true}
 
         case 'TODOS_RECEIVED':
-            return { ...state, todos: action.todos }
-            
+            return { ...state, todoItems: action.todos.todoItems, todoDetails: action.todos.params, loading: false }
+
         default:
             return state
     }
