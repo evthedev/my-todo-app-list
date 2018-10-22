@@ -73,7 +73,7 @@ class TodosList extends Component {
 
     render() {
         return (
-            <Card cover={<div className='ant-card-cover-heading'><img src={logo} className='todos__logo' /><span className='todos__heading'>Todo list</span></div>} className='todos__container'>
+            <Card cover={<div className='ant-card-cover-heading'><span className='todos__heading'>Todo list</span></div>} className='todos__container'>
                 <div className='todos__settings'>
                     {this.state.isEditing && (
                         <div className='todos__settings--editing'>
